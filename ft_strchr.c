@@ -1,0 +1,46 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/14 12:27:38 by kriad             #+#    #+#             */
+/*   Updated: 2025/10/18 17:17:32 by kriad            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <unistd.h>
+
+char	*ft_strchr(const char *s, int c)
+{
+	int	i;
+
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == c)
+			return ((char *) &s[i]);
+		i++;
+	}
+	if (c == '\0')
+		return ((char *) &s[i]);
+	return (NULL);
+}
+// #include <stdio.h>
+
+// int main(void)
+// {
+//     char *s = "Hello world";
+//     char *p;
+
+//     p = ft_strchr(s, 'o');
+//     if (p)
+//         printf("Found: %s\n", p);
+
+//     p = ft_strchr(s, 'z');
+//     if (!p)
+//         printf("Not found\n");
+
+//     return 0;
+// }
