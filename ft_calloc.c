@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 14:14:49 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/19 16:21:58 by kriad            ###   ########.fr       */
+/*   Updated: 2025/10/20 21:01:32 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,10 @@
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
+	size_t	len;
 
-	if (nmemb > SIZE_MAX / size)
+	len = size * nmemb;
+	if (size != 0 && nmemb != len / size)
 		return (NULL);
 	ptr = malloc(nmemb * size);
 	if (!ptr)

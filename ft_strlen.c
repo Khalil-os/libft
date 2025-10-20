@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 01:05:53 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/18 18:08:10 by kriad            ###   ########.fr       */
+/*   Updated: 2025/10/20 23:53:46 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,11 @@ size_t	ft_strlen(const char *s)
 // {
 //     char *str1 = "Hello 42!";
 
-//     printf("Length of '%s' = %zu\n", str1, ft_strlen(str1));
+// 	long x = (long)str1;
+
+// 	char *p = (char *)x;
+
+//     printf("Length of '%s' = %zu\n", p, ft_strlen(str1));
 
 //     return 0;
 // }

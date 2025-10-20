@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 12:10:27 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/18 18:40:28 by kriad            ###   ########.fr       */
+/*   Updated: 2025/10/20 22:51:00 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 //     char *src = "42!";
 //     unsigned int n;
 
-//     n = ft_strlcat(dest, src, sizeof(dest));
+//     n = ft_strlcat(dest, src, 0);
 
 //     printf("Result: %s\n", dest);
 //     printf("Return: %u\n", n);
