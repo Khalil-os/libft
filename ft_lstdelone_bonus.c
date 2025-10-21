@@ -1,33 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_lstdelone_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/14 13:33:11 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/21 18:44:25 by kriad            ###   ########.fr       */
+/*   Created: 2025/10/19 17:06:11 by kriad             #+#    #+#             */
+/*   Updated: 2025/10/21 18:08:04 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	size_t	i;
-
-	if (n == 0 || (!s1 && !s2))
-		return (0);
-	i = 0;
-	while (s1[i] && s2[i] && i < n - 1 && s1[i] == s2[i])
-		i++;
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	if (!lst || !del)
+		return ;
+	del(lst->content);
+	free (lst);
 }
 // #include <stdio.h>
-// #include <string.h>
+
+// void	del_content(void *content)
+// {
+// 	free(content);
+// }
 
 // int main(void)
 // {
-//    	printf("%d\n", ft_strncmp("abc", "abd", 3)); // -1
-//     return 0;
+// 	t_list *node = ft_lstnew(malloc(20));
+
+// 	if (!node)
+// 		return (1);
+
+// 	ft_lstdelone(node, del_content);
+
+// 	printf("Node deleted successfully!\n");
+// 	return 0;
 // }

@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 12:10:27 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/20 22:51:00 by kriad            ###   ########.fr       */
+/*   Updated: 2025/10/21 18:36:58 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	size_t	slen;
 	size_t	i;
 
+	if (dest == NULL && size == 0)
+		return (ft_strlen(src));
 	dlen = 0;
 	slen = 0;
 	while (dest[dlen] && dlen < size)

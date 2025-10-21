@@ -1,33 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/14 13:33:11 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/21 18:44:25 by kriad            ###   ########.fr       */
+/*   Created: 2025/10/19 17:27:26 by kriad             #+#    #+#             */
+/*   Updated: 2025/10/21 18:08:11 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	size_t	i;
-
-	if (n == 0 || (!s1 && !s2))
-		return (0);
-	i = 0;
-	while (s1[i] && s2[i] && i < n - 1 && s1[i] == s2[i])
-		i++;
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }
 // #include <stdio.h>
-// #include <string.h>
+
+// void print_content(void *content)
+// {
+// 	printf("%s\n", (char *)content);
+// }
 
 // int main(void)
 // {
-//    	printf("%d\n", ft_strncmp("abc", "abd", 3)); // -1
-//     return 0;
+// 	t_list *head = NULL;
+// 	t_list *node1;
+// 	t_list *node2;
+
+// 	node1 = ft_lstnew("Hello");
+// 	node2 = ft_lstnew("World");
+
+// 	ft_lstadd_back(&head, node1);
+// 	ft_lstadd_back(&head, node2);
+
+// 	ft_lstiter(head, print_content);
+
+// 	return 0;
 // }

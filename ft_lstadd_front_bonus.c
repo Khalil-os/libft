@@ -1,33 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/14 13:33:11 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/21 18:44:25 by kriad            ###   ########.fr       */
+/*   Created: 2025/10/19 15:58:11 by kriad             #+#    #+#             */
+/*   Updated: 2025/10/21 18:07:42 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	size_t	i;
-
-	if (n == 0 || (!s1 && !s2))
-		return (0);
-	i = 0;
-	while (s1[i] && s2[i] && i < n - 1 && s1[i] == s2[i])
-		i++;
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	if (!lst || !new)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }
 // #include <stdio.h>
-// #include <string.h>
 
 // int main(void)
 // {
-//    	printf("%d\n", ft_strncmp("abc", "abd", 3)); // -1
-//     return 0;
+//     t_list *head = NULL;
+//     t_list *node1 = ft_lstnew("B");
+//     t_list *node2 = ft_lstnew("A");
+
+//     head = node1;
+//     ft_lstadd_front(&head, node2);
+
+//     printf("1st node: %s\n", (char *)head->content);
+//     printf("2nd node: %s\n", (char *)head->next->content);
+
+//     free(node1);
+//     free(node2);
+//     return (0);
 // }
