@@ -6,14 +6,11 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:22:03 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/21 18:27:01 by kriad            ###   ########.fr       */
+/*   Updated: 2025/10/21 22:30:43 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-#include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

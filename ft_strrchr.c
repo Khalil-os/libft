@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 12:35:23 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/18 18:15:20 by kriad            ###   ########.fr       */
+/*   Updated: 2025/10/21 22:30:03 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ char	*ft_strrchr(const char *s, int c)
 	while (s[slen])
 		slen++;
 	i = slen - 1;
-	if (c == '\0')
+	if ((unsigned char)c == '\0')
 		return ((char *)&s[slen]);
 	while (i >= 0)
 	{
-		if (s[i] == c)
+		if ((unsigned char)s[i] == (unsigned char)c)
 			return ((char *)&s[i]);
 		i--;
 	}
