@@ -6,11 +6,11 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:36:23 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/20 23:30:14 by kriad            ###   ########.fr       */
+/*   Updated: 2025/10/24 20:02:49 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

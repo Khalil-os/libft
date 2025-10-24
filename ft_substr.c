@@ -6,11 +6,11 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:08:09 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/18 18:23:47 by kriad            ###   ########.fr       */
+/*   Updated: 2025/10/24 20:03:07 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

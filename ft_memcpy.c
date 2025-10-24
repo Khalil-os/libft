@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 11:33:57 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/18 15:08:51 by kriad            ###   ########.fr       */
+/*   Updated: 2025/10/24 19:59:58 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 	if (!dest && !src)
 		return (NULL);
+	if (dest == src || n == 0)
+		return (dest);
 	p = (unsigned char *)dest;
 	t = (unsigned char *)src;
 	i = 0;
@@ -31,6 +33,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 // #include <stdio.h>
+// #include <string.h>
 
 // int main(void)
 // {
@@ -42,6 +45,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 //     printf("Source: %s\n", src);
 //     printf("Dest:   %s\n", dest);
-
+// 	printf("%s\n", (char *)ft_memcpy("salam", "salam", 5));
 //     return 0;
 // }

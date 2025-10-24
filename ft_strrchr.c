@@ -6,11 +6,11 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 12:35:23 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/21 22:30:03 by kriad            ###   ########.fr       */
+/*   Updated: 2025/10/24 20:02:58 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

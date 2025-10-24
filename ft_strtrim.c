@@ -6,11 +6,11 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:33:10 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/18 18:19:44 by kriad            ###   ########.fr       */
+/*   Updated: 2025/10/24 20:03:02 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 static int	exist(char const *s, char c)
 {

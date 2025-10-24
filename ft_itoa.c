@@ -6,11 +6,11 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:16:39 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/17 18:10:41 by kriad            ###   ########.fr       */
+/*   Updated: 2025/10/24 20:01:58 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 static int	count_digits(int n)
 {
