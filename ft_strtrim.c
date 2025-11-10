@@ -6,20 +6,20 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:33:10 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/24 20:03:02 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:39:53 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	exist(char const *s, char c)
+static int	exist(char const *set, char c)
 {
 	int	i;
 
 	i = 0;
-	while (s[i])
+	while (set[i])
 	{
-		if (c == s[i])
+		if (set[i] == c)
 			return (1);
 		i++;
 	}
@@ -28,46 +28,27 @@ static int	exist(char const *s, char c)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*s;
-	int		len;
-	int		i;
-	int		j;
+	size_t	start;
+	size_t	i;
+	size_t	end;
+	char	*dest;
 
 	if (!s1 || !set)
 		return (NULL);
-	len = 0;
-	while (s1[len])
-		len++;
 	i = 0;
-	while (s1[i] && exist(set, s1[i]))
-		i++;
-	j = len - 1;
-	while (j >= 0 && exist(set, s1[j]))
-		j--;
-	len = j - i + 1;
-	s = malloc(len + 1);
-	if (!s)
+	end = ft_strlen(s1);
+	start = 0;
+	while (s1[start] && exist(set, s1[start]))
+		start++;
+	while (end > start && exist(set, s1[start]))
+		end--;
+	dest = malloc(end - start + 1);
+	if (!dest)
 		return (NULL);
-	len = 0;
-	while (s1[i] && i <= j)
-		s[len++] = s1[i++];
-	s[len] = '\0';
-	return (s);
+	while (start < end)
+	{
+		dest[i++] = s1[start++];
+	}
+	dest[i] = '\0';
+	return (dest);
 }
-// #include <stdio.h>
-
-// int main(void)
-// {
-//     char *s1 = "   Hello 42!   ";
-//     char *set = " ";
-//     char *res = ft_strtrim(s1, set);
-
-//     if (res)
-//     {
-//         printf("Original: '%s'\n", s1);
-//         printf("Trimmed:  '%s'\n", res);
-//         free(res);
-//     }
-
-//     return 0;
-// }

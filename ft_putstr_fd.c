@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 23:30:11 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/21 23:04:02 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:33:29 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,3 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
-// #include <fcntl.h>
-// int	main(void)
-// {
-// 	int fd = open("test.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
-// 	if (fd == -1)
-// 		return (1);
-// 	ft_putstr_fd("hello world !", fd);
-// 	close(fd);
-
-// 	return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 21:42:44 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/21 23:03:39 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:33:19 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,3 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	write(fd, "\n", 1);
 }
-// #include <fcntl.h>
-// int	main(void)
-// {
-// 	int fd = open("test.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
-// 	if (fd == -1)
-// 		return (1);
-// 	ft_putendl_fd("hello world !", fd);
-// 	close(fd);
-
-// 	return (0);
-// }

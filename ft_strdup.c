@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 14:12:33 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/24 20:02:32 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:33:52 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,20 +33,3 @@ char	*ft_strdup(const char *s1)
 	copy[i] = '\0';
 	return (copy);
 }
-// #include <stdio.h>
-
-// int main(void)
-// {
-//     char *original = "Hello 42!";
-//     char *copy;
-
-//     copy = ft_strdup(original);
-//     if (!copy)
-//         return 1;
-
-//     printf("Original: %s", original);
-//     printf("Copy: %s\n", copy);
-
-//     free(copy);
-//     return 0;
-// }

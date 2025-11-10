@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 12:27:38 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/24 20:02:23 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:33:49 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,20 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *) &s[i]);
 	return (NULL);
 }
-// #include <stdio.h>
-
-// int main(void)
-// {
-//     char *s = "Hello world";
-//     char *p;
-
-//     p = ft_strchr(s, 'o');
-//     if (p)
-//         printf("Found: %s\n", p);
-
-//     p = ft_strchr(s, 'z');
-//     if (!p)
-//         printf("Not found\n");
-
-//     return 0;
-// }

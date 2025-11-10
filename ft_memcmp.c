@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:47:28 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/20 20:55:20 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:33:02 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,18 +31,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-// #include <stdio.h>
-// #include <string.h>
-
-// int main(void)
-// {
-//     char str1[] = "Hello";
-//     char str2[] = "Hella";
-
-//     //int res = memcmp(NULL, NULL, 5);
-//     int res = ft_memcmp(str1, str2, 0);
-//     if (res == 0)
-//         printf("str1 and str2 are equal\n");
-//     else
-//         printf("str1 and str2 differ: %d\n", res);
-// }

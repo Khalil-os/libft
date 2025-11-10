@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 14:10:04 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/24 18:15:12 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:31:26 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,13 +51,3 @@ int	ft_atoi(const char *str)
 	}
 	return ((int)(result * sign));
 }
-// #include <stdio.h>
-// #include <stdlib.h>
-
-// int main(void)
-// {
-// 	char *str1 = "21474836478888888888";
-// 	char *str2 = "21474836478888888888";
-// 	printf("%d\n", ft_atoi(str1));
-// 	printf("%d\n", atoi(str2));
-// }

@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 21:43:58 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/21 23:03:51 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:33:22 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,16 +32,3 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd(nb + '0', fd);
 }
-// #include <fcntl.h>
-// int	main(void)
-// {
-// 	ft_putnbr_fd(2147483647, 1);  
-// 	write(1, "\n", 1);
-//	int fd = open("test.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
-// 	if (fd == -1)
-// 		return (1);
-// 	ft_putnbr_fd(123465, fd);
-// 	close(fd);
-
-// 	return (0);
-// }

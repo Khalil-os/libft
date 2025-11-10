@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 11:38:04 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/20 23:50:21 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:41:13 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		return (NULL);
 	p = (unsigned char *)dest;
 	t = (unsigned char *)src;
-	if ((p < t + n) && (p > t))
+	if (p < t)
+	{
+		ft_memcpy(dest, src, n);
+	}
+	else
 	{
 		i = n;
 		while (i > 0)
@@ -31,21 +35,5 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			i--;
 		}
 	}
-	else
-	{
-		ft_memcpy(dest, src, n);
-	}
 	return (dest);
 }
-// #include <stdio.h>
-// #include <string.h>
-
-// int main(void)
-// {
-//     char str1[20] = "Hello, 42!"; 
-//     char str2[20] = "1234567890";
-
-//     ft_memmove(str1+2 , str1 , 5);
-//     printf("With overlap: %s\n", str1);
-//     return 0;
-// }

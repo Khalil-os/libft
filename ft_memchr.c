@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:38:01 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/21 18:39:05 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:32:58 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,16 +27,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-// #include <stdio.h>
-
-// int main(void)
-// {
-//     char str[] = "Hello, 42!";
-//     char *res;
-
-//     res = ft_memchr(str, '4', 12);
-//     if (res)
-//         printf("Found '%c' at index %ld\n", *res, res - str);
-//     else
-//         printf("Character not found\n");
-// }

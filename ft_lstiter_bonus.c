@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 17:27:26 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/21 18:08:11 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:32:07 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,26 +20,3 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
-// #include <stdio.h>
-
-// void print_content(void *content)
-// {
-// 	printf("%s\n", (char *)content);
-// }
-
-// int main(void)
-// {
-// 	t_list *head = NULL;
-// 	t_list *node1;
-// 	t_list *node2;
-
-// 	node1 = ft_lstnew("Hello");
-// 	node2 = ft_lstnew("World");
-
-// 	ft_lstadd_back(&head, node1);
-// 	ft_lstadd_back(&head, node2);
-
-// 	ft_lstiter(head, print_content);
-
-// 	return 0;
-// }

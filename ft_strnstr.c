@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:55:48 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/21 18:56:28 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:34:18 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,16 +31,3 @@ char	*ft_strnstr(const char *src, const char *dest, size_t n)
 	}
 	return (NULL);
 }
-// #include <stdio.h>
-
-// int main(void)
-// {
-//     char *hay = "Hello 42 world";
-//     char *need = "42";
-//     char *res;
-
-//     res = ft_strnstr(hay, need, 10);
-//     printf("Result: %s\n", res);
-
-//     return 0;
-// }

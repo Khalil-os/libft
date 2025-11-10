@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 17:06:25 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/24 20:02:36 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:33:55 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,22 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-// #include <stdio.h>
-
-// void my_func(unsigned int i, char *c)
-// {
-//     *c = *c + i;
-// }
-
-// int main(void)
-// {
-//     char str[] = "abcd";
-
-//     printf("Before: %s\n", str);
-
-//     ft_striteri(str, my_func);
-
-//     printf("After: %s\n", str);
-
-//     return 0;
-// }

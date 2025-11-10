@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:22:03 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/21 22:30:43 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:33:58 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,21 +34,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	*ptr = '\0';
 	return (res);
 }
-// #include <stdio.h>
-// #include "libft.h"
-
-// int main(void)
-// {
-//     char *s1 = "Hello ";
-//     char *s2 = "42!";
-//     char *res;
-
-//     res = ft_strjoin(s1, s2);
-//     if (!res)
-//         return 1;
-
-//     printf("Joined: %s\n", res);
-
-//     free(res);
-//     return 0;
-// }

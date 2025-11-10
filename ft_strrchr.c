@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 12:35:23 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/24 20:02:58 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:34:20 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,18 +31,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-// #include <stdio.h>
-
-// int main(void)
-// {
-//     char *s = "Hello 42 World";
-//     char *res;
-
-//     res = ft_strrchr(s, 'o');
-//     if (res)
-//         printf("Last 'o' at: %s\n", res);
-
-//     res = ft_strrchr(s, 'x');
-//     if (!res)
-//         printf("'x' not found\n");
-// }

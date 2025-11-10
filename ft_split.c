@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:02:56 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/18 17:14:20 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:33:36 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,8 @@ static char	*word_dup(char const *s, int start, int end)
 
 static void	*free_all(char **res, int k)
 {
-	while (k > 0)
-		free(res[--k]);
+	while (k >= 0)
+		free(res[k--]);
 	free(res);
 	return (NULL);
 }
@@ -92,25 +92,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (res);
 }
-// #include <stdio.h>
-
-// int main(void)
-// {
-//     char **res;
-//     int i;
-
-//     res = ft_split("    Hello   world  this is 42     ", ' ');
-//     if (!res)
-//         return 1;
-
-//     i = 0;
-//     while (res[i])
-//     {
-//         printf("[%s]\n", res[i]);
-//         free(res[i]);
-//         i++;
-//     }
-//     free(res);
-
-//     return 0;
-// }

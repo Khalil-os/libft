@@ -6,22 +6,25 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:16:39 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/24 20:01:58 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:47:18 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	count_digits(int n)
+static int	count_digits(long num)
 {
 	int	count;
 
 	count = 0;
-	if (n <= 0)
-		count = 1;
-	while (n > 0)
+	if (num <= 0)
 	{
-		n /= 10;
+		count++;
+		num = -num;
+	}
+	while (num > 0)
+	{
+		num /= 10;
 		count++;
 	}
 	return (count);
@@ -29,34 +32,27 @@ static int	count_digits(int n)
 
 char	*ft_itoa(int n)
 {
-	char	*res;
-	long	nb;
-	int		len;
+	long	nbr;
+	int		count;
+	char	*str;
 
-	nb = n;
-	len = count_digits(n);
-	res = malloc(len + 1);
-	if (!res)
+	nbr = (long)n;
+	count = count_digits(nbr);
+	str = malloc (count + 1);
+	if (!str)
 		return (NULL);
-	res[len] = '\0';
-	if (nb < 0)
+	if (nbr < 0)
 	{
-		res[0] = '-';
-		nb = -nb;
+		str[0] = '-';
+		nbr = -nbr;
 	}
-	if (nb == 0)
-		res[0] = '0';
-	while (nb > 0)
+	str[count] = '\0';
+	if (nbr == 0)
+		str[0] = '0';
+	while (nbr > 0)
 	{
-		res[--len] = (nb % 10) + '0';
-		nb /= 10;
+		str[--count] = '0' + (nbr % 10);
+		nbr /= 10;
 	}
-	return (res);
+	return (str);
 }
-// #include <stdio.h>
-
-// int main(void)
-// {
-//     int str1 = 12345;
-// 	printf("%s\n", ft_itoa(str1));
-// }

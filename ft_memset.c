@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 01:19:48 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/21 18:31:26 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:33:12 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,3 @@ void	*ft_memset(void *ptr, int c, size_t n)
 		p[i++] = (unsigned char) c;
 	return (ptr);
 }
-// #include <stdio.h>
-// int main()
-// {
-// 	int x = 200000 ;//1337 
-// 	ft_memset(&x,-1,4);
-// 	ft_memset(&x,214,1);
-// 	//ft_memset((unsigned char *)&x + 1,,1);
-// 	//ft_memset((signed char *)&x + 1,255,1);
-// 	printf("%d\n",x);
-// }

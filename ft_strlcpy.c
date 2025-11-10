@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 11:58:00 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/18 18:06:07 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:34:05 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,17 +34,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 		i++;
 	return (i);
 }
-// #include <stdio.h>
-
-// int main(void)
-// {
-// 	char dest[5];
-// 	unsigned int len;
-
-// 	len = ft_strlcpy(dest, "Hello42", sizeof(dest));
-
-// 	printf("Dest: %s\n", dest);
-// 	printf("Length: %u\n", len);
-
-// 	return 0;
-// }

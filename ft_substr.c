@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:08:09 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/24 20:03:07 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:34:26 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*sub;
 	size_t	i;
 
+	if (!s)
+		return (NULL);
 	slen = 0;
 	while (s[slen])
 		slen++;
@@ -37,16 +39,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub[i] = '\0';
 	return (sub);
 }
-// #include <stdio.h>
-
-// int main(void)
-// {
-//     char *s = "Hello 42 World!";
-//     char *sub;
-
-//     sub = ft_substr(s, 6, 2);
-//     printf("Substring: '%s'\n", sub);
-//     free(sub);
-
-//     return 0;
-// }

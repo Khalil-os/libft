@@ -6,7 +6,7 @@
 /*   By: kriad <kriad@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:36:23 by kriad             #+#    #+#             */
-/*   Updated: 2025/10/24 20:02:49 by kriad            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:34:10 by kriad            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,26 +35,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	t[i] = '\0';
 	return (t);
 }
-// #include <stdio.h>
-
-// char my_func(unsigned int i, char c)
-// {
-//     if (i % 2 == 0)
-//         return c - 32;
-//     return c;
-// }
-
-// int main(void)
-// {
-//     char *s = "hello world";
-//     char *res = ft_strmapi(s, my_func);
-
-//     if (res)
-//     {
-//         printf("Original: %s\n", s);
-//         printf("Mapped:   %s\n", res);
-//         free(res);
-//     }
-
-//     return 0;
-// }
